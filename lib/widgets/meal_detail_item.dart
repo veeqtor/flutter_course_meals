@@ -24,12 +24,15 @@ class MealDetailsItem extends StatelessWidget {
               ),
               elevation: 2,
               clipBehavior: Clip.hardEdge,
-              child: FadeInImage(
-                image: NetworkImage(meal.imageUrl),
-                placeholder: MemoryImage(kTransparentImage),
-                width: double.infinity,
-                height: 200,
-                fit: BoxFit.cover,
+              child: Hero(
+                tag: meal.id,
+                child: FadeInImage(
+                  image: NetworkImage(meal.imageUrl),
+                  placeholder: MemoryImage(kTransparentImage),
+                  width: double.infinity,
+                  height: 200,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             const SizedBox(height: 16),
