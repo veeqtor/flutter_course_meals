@@ -82,7 +82,7 @@ class _CategoriesScreen extends State<CategoriesScreen>
       ),
       builder: (context, child) => SlideTransition(
         position: Tween(
-          begin: const Offset(0, 0.8),
+          begin: const Offset(0, 0.2),
           end: const Offset(0, 0),
         ).animate(
           CurvedAnimation(
